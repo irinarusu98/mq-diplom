@@ -23,13 +23,22 @@
           <li class="menu_item"><a class="menu_item_link" href="#">Темы</a></li>
           <li class="menu_item"><a class="menu_item_link" href="#">Контакты</a></li>
         </ul>
+
+        <div class="menu_burgers">
+          <svg class="menu_burger" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="Layer 2" id="Layer_2">
+              <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z" />
+              <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+              <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+            </g>
+          </svg>
+        </div>
       </nav>
       <h1 class="header_title">Блог о творчестве, спорте и образе жизни </h1>
     </div>
   </header>
 
   <main class="main">
-
     <section class="trends">
       <h2 class="trends_title"> <a class="trends_title_link"> Сейчас в тренде </a></h2>
 
@@ -81,7 +90,7 @@
     </section>
 
     <div class="container_main">
-      <section class="main_content">
+      <div class="main_content">
         <article class="article">
           <div class="picture">
             <img class="article_img" src="images/last-post1.jpg" alt=" Девушка на пляже">
@@ -97,7 +106,7 @@
               <a href="#" class="title_article_link">
                 10 мест, ради которых стоит проснуться на рассвете</a>
             </h2>
-            <time class="datetime">10 июня, 2019 </time>
+            <time datetime="2019-06-10" class="datetime">10 июня, 2019 </time>
             <a class="author_link" href="#">Неизвестный автор</a>
 
             <p class="article_text"> Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены
@@ -120,7 +129,7 @@
               <a href="#" class="title_article_link">
                 ЙОга для начинающих в домашних условиях</a>
             </h2>
-            <time class="datetime">10 июня, 2019 </time>
+            <time datetime="2019-06-10" class="datetime">10 июня, 2019 </time>
             <a class="author_link" href="#">Неизвестный автор</a>
 
             <p class="article_text"> Расскажем, какие упражнения выбрать и как сделать коврик для занятий
@@ -143,7 +152,7 @@
                 Лучшие музыкальные
                 фестивали этого лета</a>
             </h2>
-            <time class="datetime">10 июня, 2019 </time>
+            <time datetime="2019-06-10" class="datetime">10 июня, 2019 </time>
             <a class="author_link" href="#">Неизвестный автор</a>
 
             <p class="article_text"> Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы
@@ -170,7 +179,7 @@
                 Наукоёмкий подход к
                 кулинарии</a>
             </h2>
-            <time class="datetime">10 июня, 2019 </time>
+            <time datetime="2019-06-10" class="datetime">10 июня, 2019 </time>
             <a class="author_link" href="#">Неизвестный автор</a>
 
             <p class="article_text"> Узнаем основы проектирования новых пищевых и около-пищевых опытов,
@@ -196,16 +205,16 @@
                 делаем модные принты на
                 подушках для интерьера </a>
             </h2>
-            <time class="datetime">10 июня, 2019 </time>
+            <time datetime="2019-06-10" class="datetime">10 июня, 2019 </time>
             <a class="author_link" href="#">Неизвестный автор</a>
 
             <p class="article_text"> Подушки для дивана целесообразнее заказать в съемных чехлах на молнии,
               если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
           </div>
         </article>
-      </section>
+      </div>
 
-      <section class="aside">
+      <div class="aside">
         <section class="post_list">
 
           <div class="title_new_posts">
@@ -218,7 +227,7 @@
             </div>
 
             <div class="post_desc_text">
-              <time class="post_datetime">14 июня, 2019 </time>
+              <time datetime="2019-06-14" class="post_datetime">14 июня, 2019 </time>
               <h3 class="subtitle"><a href="#" class="subtitle_link">10 мест, ради которых стоит
                   проснуться</a> </h3>
             </div>
@@ -229,7 +238,7 @@
               <a href="#"> <img src="images/151.jpg" alt="Йога" class="post_img"></a>
             </div>
             <div class="post_desc_text">
-              <time class="post_datetime">14 июня, 2019 </time>
+              <time datetime="2019-06-14" class="post_datetime">14 июня, 2019 </time>
               <h3 class="subtitle"><a href="#" class="subtitle_link">Йога для домашних </a></h3>
             </div>
           </article>
@@ -240,7 +249,7 @@
             </div>
 
             <div class="post_desc_text">
-              <time class="post_datetime">14 июня, 2019 </time>
+              <time datetime="2019-06-14" class="post_datetime">14 июня, 2019 </time>
               <h3 class="subtitle"><a href="#" class="subtitle_link">как мы превратили классное место в
                   балкон</a> </h3>
             </div>
@@ -252,7 +261,7 @@
             </div>
 
             <div class="post_desc_text">
-              <time class="post_datetime">14 июня, 2019 </time>
+              <time datetime="2019-06-14" class="post_datetime">14 июня, 2019 </time>
               <h3 class="subtitle"><a href="#" class="subtitle_link">Кулинарный подход к науке</a></h3>
             </div>
           </article>
@@ -263,7 +272,7 @@
             </div>
 
             <div class="post_desc_text">
-              <time class="post_datetime">14 июня, 2019 </time>
+              <time datetime="2019-06-14" class="post_datetime">14 июня, 2019 </time>
               <h3 class="subtitle"><a href="#" class="subtitle_link">лучшие прически для распущенных
                   волос</a></h3>
             </div>
@@ -271,7 +280,7 @@
         </section>
 
 
-        <section class="search_section">
+        <div class="search_section">
           <form>
             <label for="text_search">
               <span class="visually-hidden">Поле поиска</span></label>
@@ -280,7 +289,7 @@
               <span class="visually-hidden">Кнопка поиска</span>
             </button>
           </form>
-        </section>
+        </div>
 
         <section class="email_send">
           <h2 class="email_send_title"><a class="email_send_link" href="#"> Рассылка</a></h2>
@@ -288,7 +297,7 @@
           <form>
             <label for="email">
               <span class="visually-hidden">Введите ваш email</span></label>
-            <input id="email" type="email" name="email" class="email_field" placeholder="Ваш email-адрес" reguired>
+            <input id="email" type="email" name="email" class="email_field" placeholder="Ваш email-адрес" required>
             <button class="btn_email" type="button">
               <span class="btn_email_text"> Подписаться</span>
             </button>
@@ -337,15 +346,19 @@
             </li>
           </ul>
         </section>
-      </section>
-
+      </div>
     </div>
+
     <section class="shop_products">
       <h2 class="products_title"> <a class="products_title_link"> Наши изделия </a></h2>
 
       <div class="shop_box">
-        <div class="box_product box-product1">
-          <div class="products_desc">
+        <div class="box_product img_product1">
+          <!-- <picture>
+            <img src="images/shop-item-desk1.jpg" width="100%" alt="Подушка">
+          </picture> -->
+
+          <div class="box_desc">
             <h2 class="head_product"> <a href="#" class="head_product_link"> Подушки на диван</a></h2>
             <p class="product_desc">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
                 class="link_desc_product">
@@ -360,8 +373,12 @@
           </div>
         </div>
 
-        <div class="box_product box-product2">
-          <div class="products_desc">
+        <div class="box_product img_product2">
+          <!-- <picture>
+            <img src="images/shop-item-desk2.jpg" width="100%" alt="Кукла">
+          </picture> -->
+
+          <div class="box_desc">
             <h2 class="head_product"> <a href="#" class="head_product_link"> Кукла "Зайчик"</a></h2>
             <p class="product_desc">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"
                 class="link_desc_product">
@@ -375,8 +392,11 @@
           </div>
         </div>
 
-        <div class="box_product box-product3">
-          <div class="products_desc">
+        <div class="box_product img_product3">
+          <!-- <picture>
+            <img src="images/shop-item-desk3.jpg" width="100%" alt="Рамка">
+          </picture> -->
+          <div class="box_desc">
             <h2 class="head_product"> <a href="#" class="head_product_link"> Шестиугольная рамка</a></h2>
             <p class="product_desc">Необычная рамка для украшения дома из видео <a href="#" class="link_desc_product">
                 "Как сделать рамку из подручных средств за 30 минут" </a></p>
@@ -469,3 +489,69 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="box_product box-product1">
+          <div class="products_desc">
+            <h2 class="head_product"> <a href="#" class="head_product_link"> Подушки на диван</a></h2>
+            <p class="product_desc">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                class="link_desc_product">
+                здесь</a></p>
+            <div class="product_footer">
+              <div class="product_prices">
+                <span class="product_price product_old_price"> 1000 </span>
+                <span class="product_price product_new_price "> 800 </span>
+              </div>
+              <button class="product_btn" type="button"> В магазин</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box_product box-product2">
+          <div class="products_desc">
+            <h2 class="head_product"> <a href="#" class="head_product_link"> Кукла "Зайчик"</a></h2>
+            <p class="product_desc">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"
+                class="link_desc_product">
+                весенняя серия постов</a> в блоге и несколько подкастов.</p>
+            <div class="product_footer">
+              <div class="product_prices">
+                <span class="product_price product_new_price "> 3500 </span>
+              </div>
+              <button class="product_btn" type="button"> В магазин</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box_product box-product3">
+          <div class="products_desc">
+            <h2 class="head_product"> <a href="#" class="head_product_link"> Шестиугольная рамка</a></h2>
+            <p class="product_desc">Необычная рамка для украшения дома из видео <a href="#" class="link_desc_product">
+                "Как сделать рамку из подручных средств за 30 минут" </a></p>
+            <div class="product_footer">
+              <div class="product_prices">
+                <span class="product_price product_old_price"> 500 </span>
+                <span class="product_price product_new_price "> 400 </span>
+              </div>
+              <button class="product_btn" type="button"> В магазин</button>
+            </div>
+          </div>
+        </div> -->
