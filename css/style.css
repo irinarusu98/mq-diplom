@@ -124,7 +124,6 @@ a {
   font-weight: bold;
   font-style: normal;
   font-size: 4.5rem;
-  /* line-height: 75px; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -144,7 +143,6 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 250px;
 }
 
 .trends {
@@ -242,6 +240,7 @@ a {
 
 .trend_items {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .head_trend {
@@ -293,6 +292,7 @@ a {
 
 .items_link {
   display: flex;
+  flex-wrap: wrap;
   max-width: 153px;
 }
 
@@ -716,7 +716,6 @@ a {
 /* НАШИ ИЗДЕЛИЯ */
 
 .shop_products {
-  position: relative;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -743,52 +742,26 @@ a {
 
 .shop_box {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box_product {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  width: 33.3%;
-  height: 204px;
-  background-color: #c0c0c0;
-}
-
-.box_product:nth-child(n+2) {
-  margin-left: 112px;
-}
-
-.img_product1 {
-  background-image: url(../images/shop-item-desk1.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.img_product2 {
-  background-image: url(../images/shop-item-desk2.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.img_product3 {
-  background-image: url(../images/shop-item-desk3.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  max-width: 300px;
+  margin:40px;
 }
 
 .box_desc {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
+  flex-grow: 1; 
   padding: 53px 23px;
   border: 3px solid #b59f5b;
-  position: relative;
-  top: 180px;
-  margin: 0 -23px;
   min-height: 263px;
+  margin-top: -28px;
+  width: 347px;
 }
 
 .head_product_link {
@@ -804,6 +777,7 @@ a {
 .product_desc {
   color: #323232;
   font-size: 1.5rem;
+  max-width: 347px;
 }
 
 .product_desc:hover {
@@ -1130,27 +1104,12 @@ a {
     margin-left: 0;
   }
 
-  /* .shop_box{
-    
-  } */
-
-  .img_product1 {
-    background-image: url(../images/shop-item-tablet1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+  .shop_box{
+    display: grid;
+    grid-template-rows:50% 50% ;
+    grid-template-columns: 1fr 1fr ;
   }
 
-  .img_product2 {
-    background-image: url(../images/shop-item-tablet2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .img_product3 {
-    background-image: url(../images/shop-item-tablet3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 
@@ -1159,7 +1118,7 @@ a {
 /* MOBILE */
 @media (max-width:640px) {
   html {
-    font-size: 9px;
+    font-size: 5.7px;
   }
 
   .header {
@@ -1226,42 +1185,3 @@ a {
   }
 
 }
-
-
-
-
-
-
-/* .box-product1 {
-  background-image: url(../images/shop-item-desk1.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-} */
-
-/* .box-product2 {
-  background-image: url(../images/shop-item-desk2.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.box-product3 {
-  background-image: url(../images/shop-item-desk3.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.products_desc {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
-  padding: 53px 23px;
-  border: 3px solid #b59f5b;
-  position: relative;
-  top: 180px;
-  margin: 0 -23px;
-  min-height: 263px;
-} */
