@@ -293,7 +293,7 @@ a {
 .items_link {
   display: flex;
   flex-wrap: wrap;
-  max-width: 153px;
+  max-width: 202px;
 }
 
 .link_item:nth-child(n+2) {
@@ -1110,6 +1110,12 @@ a {
     grid-template-columns: 1fr 1fr ;
   }
 
+  .picture{
+    background: #eff6f1;
+    width: 292px;
+    height: 226px;
+  }
+
 }
 
 
@@ -1176,12 +1182,18 @@ a {
     display: block;
   }
 
-  .article_img {
-    width: 100%;
-  }
-
   .aside {
     margin-left: 0;
+  }
+
+  .shop_box {
+    align-items: center;
+    justify-content: center;
+  }
+  .picture{
+    background: #eff6f1;
+    width: 285px;
+    height: 283px;
   }
 
 }
