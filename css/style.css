@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 @font-face {
@@ -326,7 +326,6 @@ a {
   text-decoration: none;
   color: #0e0f0d;
   width: 330px;
-
 }
 
 .title_article_link:hover {
@@ -334,6 +333,7 @@ a {
 }
 
 .title_article {
+  margin-top: 16px;
   margin-bottom: 10px;
   line-height: 23px;
 }
@@ -347,8 +347,6 @@ a {
 
   position: relative;
   top: 9px;
-  right: 6px;
-
 }
 
 .author_link {
@@ -374,10 +372,8 @@ a {
   line-height: 22px;
   color: #0f0d0e;
 
-  padding: 42px 0px;
+  padding: 20px 0px;
 }
-
-
 
 .aside {
   width: 272px;
@@ -1070,7 +1066,7 @@ a {
 
 @media (min-width:641px) and (max-width:1200px) {
   html {
-    font-size: 9px;
+    font-size: 55.5%;
   }
 
   .header {
@@ -1089,10 +1085,12 @@ a {
     display: none;
   }
 
-  .box_trends {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 1fr 1fr;
+  @media screen and (orientation: portrait) {
+    .box_trends {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .box_trend {
@@ -1104,11 +1102,11 @@ a {
   }
 
   .article_description {
-    max-width: 391px;
+    max-width: 343px;
   }
 
   .aside {
-    margin-left: 0;
+    margin-left: 34px;
   }
 
   .shop_box {
@@ -1121,6 +1119,7 @@ a {
     background: #eff6f1;
     width: 292px;
     height: 226px;
+    margin-bottom: 16px;
   }
 
 }
@@ -1131,7 +1130,7 @@ a {
 /* MOBILE */
 @media (max-width:640px) {
   html {
-    font-size: 5.7px;
+    font-size: 50%;
   }
 
   .header {
@@ -1147,7 +1146,6 @@ a {
     position: relative;
     top: 50px;
     margin-top: 225px;
-
   }
 
   .logo_link {
@@ -1172,13 +1170,31 @@ a {
     display: none;
   }
 
-  .box_trends {
-    display: block;
+  @media screen and (orientation: portrait) {
+    .box_trends {
+      display: block;
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    .box_trends {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .box_trend {
     width: 100%;
   }
+
+  /* .trend_desc{
+    width: 550px;
+  }
+
+  .head_trend{
+    width:300px ;
+  } */
 
   .container_main {
     display: block;
@@ -1200,8 +1216,9 @@ a {
 
   .picture {
     background: #eff6f1;
-    width: 285px;
+    width: 100%;
     height: 283px;
+    margin-bottom: 16px;
   }
 
 }
