@@ -898,7 +898,6 @@ a {
 
 
 /* POP-UP */
-
 .popup {
   display: flex;
   justify-content: center;
@@ -926,7 +925,7 @@ a {
   font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -946,7 +945,7 @@ a {
   font-family: "OpenSans", sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 13px;
   margin-top: 27px;
   margin-bottom: 12px;
 
@@ -963,7 +962,7 @@ a {
   vertical-align: middle;
 
   font-family: inherit;
-  font-size: 1.3rem;
+  font-size: 13px;
 
   position: relative;
 
@@ -991,12 +990,15 @@ a {
   width: 1px;
 }
 
-
 .radio_btn:checked+.input_text::before {
   background-image: url(../svg/form-circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 18px;
+}
+
+.input_text {
+  font-size: 13px;
 }
 
 .input_text::before {
@@ -1020,8 +1022,10 @@ a {
 .textarea {
   padding: 20px;
   border: none;
-  max-width: 330px;
-  max-height: 132px;
+  width: 330px;
+  height: 132px;
+  background-color: #f4f7f6;
+  resize: none;
 }
 
 .textarea:focus {
@@ -1036,7 +1040,6 @@ a {
   width: 330px;
   cursor: pointer;
   margin-top: 26px;
-
 }
 
 .popup_btn_text {
@@ -1044,7 +1047,7 @@ a {
   font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -1082,16 +1085,16 @@ a {
     display: none;
   }
 
+  .trends {
+   
+  }
+
   @media screen and (orientation: portrait) {
     .box_trends {
       display: grid;
       grid-template-rows: 50% 50%;
       grid-template-columns: 1fr 1fr;
     }
-  }
-
-  .box_trend {
-    width: 99%;
   }
 
   .article {
@@ -1106,10 +1109,19 @@ a {
     margin-left: 34px;
   }
 
+  .shop_products {}
+
   .shop_box {
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .box_product {
+    /* width: calc(50% - 80px); */
   }
 
   .picture {
@@ -1120,7 +1132,6 @@ a {
   }
 
 }
-
 
 
 
