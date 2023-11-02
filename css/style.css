@@ -184,7 +184,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 
-  width: 25%;
+  
   height: 320px;
   margin: 0 4px 4px 0;
   background-color: #c0c0c0;
@@ -1085,9 +1085,7 @@ a {
     display: none;
   }
 
-  .trends {
-   
-  }
+  .trends {}
 
   @media screen and (orientation: portrait) {
     .box_trends {
@@ -1261,3 +1259,5 @@ a {
     margin-left: -15px;
   }
 }
+
+
